@@ -1,6 +1,6 @@
 ## 2.0.0 - Jan 23/24 2014
 
-With `2.0` all of Mimosa's compilers, which were previously internal to Mimosa, are now external in their own modules. So, for instance, this means there is now a [mimosa-coffeescript](https://github.com/dbashford/mimosa-coffeescript) module and a [mimosa-stylus](https://github.com/dbashford/mimosa-stylus).  All of the JavaScript transpilers, CSS proprocessors, micro-template compilers, and the copy "compiler" have their own Mimosa modules.
+With `2.0` all of Mimosa's compilers, which were previously internal to Mimosa, are now external in their own modules. So, for instance, this means there is now a [mimosa-coffeescript](https://github.com/dbashford/mimosa-coffeescript) module and a [mimosa-stylus](https://github.com/dbashford/mimosa-stylus).  All of the JavaScript transpilers, CSS preprocessors, micro-template compilers, and the copy "compiler" have their own Mimosa modules.
 
 This shrinks Mimosa core's footprint by an enormous amount, making it quicker to `npm install` and easier to maintain.  It also makes compilers easier to manage and update on their own while also making it much easier to add new compilers.  Previously a new compiler would have been a PR to Mimosa core, now it can be a module on its own.
 
